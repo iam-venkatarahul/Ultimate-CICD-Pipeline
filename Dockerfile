@@ -1,9 +1,9 @@
 # You can change this base image to anything else
 # But make sure to use the correct version of Java
-FROM adoptopenjdk/openjdk17:alpine-jre
+FROM openjdk:21
 
 # Simply the artifact path
-ARG artifact=target/spring-boot-web.jar
+ARG artifact=target/cicd-webapp.jar
 
 WORKDIR /opt/app
 
